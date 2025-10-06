@@ -4,7 +4,7 @@ export default function HoloMinimap() {
   const pathRef = useRef(null);
 
   useEffect(() => {
-    // no-op, decorative only
+    // decorative only
   }, []);
 
   return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import HeroScene from './components/HeroScene';
-import HUDOverlay from './components/HUDOverlay';
 import NeonEffects from './components/NeonEffects';
+import HUDOverlay from './components/HUDOverlay';
 import HoloMinimap from './components/HoloMinimap';
 
 export default function App() {
