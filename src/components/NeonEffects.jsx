@@ -10,13 +10,13 @@ export default function NeonEffects() {
       </div>
 
       {/* Street light pillars sweeping past */}
-      {Array.from({ length: 8 }).map((_, i) => (
+      {Array.from({ length: 10 }).map((_, i) => (
         <div
           key={i}
           className="absolute top-[-30%] h-[30%] w-px bg-gradient-to-b from-cyan-400/80 via-fuchsia-400/60 to-transparent blur-[1px] opacity-70"
           style={{
-            left: `${i % 2 === 0 ? 20 + i * 8 : 60 + (i - 1) * 6}%`,
-            animation: `sweep 1.8s ${i * 0.18}s linear infinite`,
+            left: `${i % 2 === 0 ? 18 + i * 7 : 60 + (i - 1) * 6}%`,
+            animation: `sweep 1.8s ${i * 0.14}s linear infinite`,
             filter: 'drop-shadow(0 0 8px rgba(59,130,246,0.8))',
           }}
         />
@@ -30,7 +30,7 @@ export default function NeonEffects() {
         <div className="h-full w-full bg-gradient-to-l from-cyan-400/0 via-cyan-400 to-cyan-400/0 blur-sm" />
       </div>
 
-      {/* Tire glow trails behind two cars (red & blue) */}
+      {/* Tire glow trails behind two lead cars */}
       <div className="absolute bottom-[12%] left-1/2 -translate-x-[58%] w-[30%] h-1 rotate-[2deg]">
         <div className="h-full w-full bg-gradient-to-r from-rose-500/0 via-rose-500 to-rose-500/0 blur-[3px] opacity-80" style={{ animation: 'tire 0.6s ease-in-out infinite' }} />
       </div>
@@ -57,6 +57,7 @@ export default function NeonEffects() {
 
       {/* Vignette */}
       <div className="absolute inset-0 bg-[radial-gradient(70%_60%_at_50%_50%,transparent,rgba(0,0,0,0.45))]" />
+      <StyleKeyframes />
     </div>
   );
 }
@@ -89,4 +90,8 @@ function StyleDefs() {
       }
     `}</style>
   );
+}
+
+function StyleKeyframes() {
+  return null;
 }

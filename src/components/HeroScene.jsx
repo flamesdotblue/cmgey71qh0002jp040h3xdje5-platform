@@ -17,7 +17,7 @@ export default function HeroScene() {
         <h1 className="text-2xl md:text-3xl font-semibold tracking-wider text-white/90 drop-shadow-[0_0_20px_rgba(168,85,247,0.6)]">
           NEON VELOCITY
         </h1>
-        <p className="text-xs md:text-sm text-white/60">Arcade Night Racing UI</p>
+        <p className="text-xs md:text-sm text-white/60">Arcade Night Racing</p>
       </div>
     </section>
   );
