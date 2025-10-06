@@ -2,7 +2,6 @@ import React from 'react';
 import HeroScene from './components/HeroScene';
 import NeonEffects from './components/NeonEffects';
 import HUDOverlay from './components/HUDOverlay';
-import HoloMinimap from './components/HoloMinimap';
 
 export default function App() {
   return (
@@ -11,7 +10,6 @@ export default function App() {
         <HeroScene />
         <NeonEffects />
         <HUDOverlay />
-        <HoloMinimap />
       </div>
     </div>
   );
