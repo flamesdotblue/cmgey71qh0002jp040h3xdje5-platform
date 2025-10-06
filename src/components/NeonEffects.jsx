@@ -44,7 +44,7 @@ export default function NeonEffects() {
           key={`spark-${i}`}
           className="absolute block w-1 h-0.5"
           style={{
-            left: `calc(50% + ${(i % 2 ? -1 : 1) * (20 + (i % 5) * 6)}px)`,
+            left: `calc(50% + ${ (i % 2 ? -1 : 1) * (20 + (i % 5) * 6) }px)`,
             bottom: `${12 + (i % 3) * 2}%`,
             background: i % 2 ? 'linear-gradient(90deg, rgba(244,63,94,1), transparent)' : 'linear-gradient(90deg, rgba(56,189,248,1), transparent)',
             filter: 'drop-shadow(0 0 6px rgba(147,51,234,0.7))',
